@@ -27,8 +27,8 @@ childAgePrevious.addEventListener("click", function () {
 })
 
 childAgeNext.addEventListener("click", function () {
-    const annualIncomeInput = document.getElementById("child-annual-income").value;
-    console.log(annualIncomeInput);
+    const childCurrentAgeInput = document.getElementById("child-current-age").value;
+   
 
 
     const childMarriageAnnualIncome = document.getElementById("child-marriage-annual-income");
@@ -36,7 +36,7 @@ childAgeNext.addEventListener("click", function () {
     childMarriageAnnualIncome.style.display = "block";
     childMarriageCurrentAge.style.display = "none";
 
-    document.getElementById("annual-income-display").innerHTML  = annualIncomeInput;
+    document.getElementById("current-age-display").innerHTML  = childCurrentAgeInput;
 })
 //child marriage annual income
 
@@ -61,7 +61,7 @@ childAnnualIncomeNext.addEventListener("click", function () {
     childAnnualIncome.style.display = "none";
     childMarriageCost.style.display = "block";
     
-    document.getElementById("financial-income-display").innerHTML  = childAnnualIncomeInput;
+    document.getElementById("annual-income-display").innerHTML  = childAnnualIncomeInput;
 })
 
 //child marriage cost
@@ -87,7 +87,7 @@ marriageCostNext.addEventListener("click", function () {
     childMarriageCost.style.display = "none";
     childsCurrentAge.style.display = "block";
     
-    document.getElementById("current-age-display").innerHTML  = childMarriageCostInput;
+    document.getElementById("marriage-cost-display").innerHTML  = childMarriageCostInput;
 })
 
 //childs current age
@@ -110,7 +110,7 @@ childsAgeNext.addEventListener("click", function () {
     childMarriageCurrentAge.style.display = "none";
     childAgeOnMarriageYear.style.display = "block";
 
-    document.getElementById("age-goal-display").innerHTML  = childsCurrentAgeInput;
+    document.getElementById("child-current-age-display").innerHTML  = childsCurrentAgeInput;
    
 })
 
@@ -135,7 +135,7 @@ ageOnMarriageYearNext.addEventListener("click", function () {
     childAgeOnMarriageYear.style.display = "none";
     childMarriageInvestment.style.display = "block";
     
-    document.getElementById("investment-display").innerHTML  = investmentInput;
+    document.getElementById("child-age-marriage-year-display").innerHTML  = ageOnMarriageYearInput;
 })
 //child marriage upfront investment
 

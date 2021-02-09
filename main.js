@@ -1,147 +1,164 @@
 
+// name
+const childNameNext = document.getElementById("child-name-next");
 
-// const nameDisplay = document.getElementById("name-display").innerHTML;
-// const annualIncomeDisplay = document.getElementById("annual-income-display").innerHTML;
-// const financialIncomeDisplay = document.getElementById("financial-income-display").innerHTML;
-// const currentAgeDisplay = document.getElementById("current-age-display").innerHTML;
-// const ageGoalDisplay = document.getElementById("age-goal-display").innerHTML;
-// const investmentDisplay = document.getElementById("investment-display").innerHTML;
-// const riskDisplay = document.getElementById("risk-display").innerHTML;
-
-const wealthNameNext = document.getElementById("wealth-name-next");
-
-wealthNameNext.addEventListener("click", function () {
-    const wealthNameInput = document.getElementById("wealth-name").value;
-    console.log(wealthNameInput);
+childNameNext.addEventListener("click", function () {
+    const childNameInput = document.getElementById("child-name").value;
+   
 
 
-    const wealthAnnualIncome = document.getElementById("wealth-creation-annual-income");
-    const wealthName = document.getElementById("wealth-creation-name");
-    wealthName.style.display = "none";
-    wealthAnnualIncome.style.display = "block";
-    document.getElementById("name-display").innerHTML = wealthNameInput;
+    const childMarriageCurrentAge = document.getElementById("child-marriage-current-age");
+    const marriageName = document.getElementById("child-marriage-name");
+
+    marriageName.style.display = "none";
+    childMarriageCurrentAge.style.display = "block";
+    document.getElementById("name-display").innerHTML = childNameInput;
 })
-// 
-const wealthAnnualPrevious = document.getElementById("wealth-annual-previous");
-const wealthAnnualNext = document.getElementById("wealth-annual-next");
+// child current age
+const childAgePrevious = document.getElementById("child-age-previous");
+const childAgeNext = document.getElementById("child-age-next");
 
-wealthAnnualPrevious.addEventListener("click", function () {
-    const wealthAnnualIncome = document.getElementById("wealth-creation-annual-income");
-    const wealthName = document.getElementById("wealth-creation-name");
-    wealthName.style.display = "block";
-    wealthAnnualIncome.style.display = "none";
+childAgePrevious.addEventListener("click", function () {
+    const childMarriageName = document.getElementById("child-marriage-name");
+    const childMarriageCurrentAge = document.getElementById("child-marriage-current-age");
+    childMarriageName.style.display = "block";
+    childMarriageCurrentAge.style.display = "none";
     
 })
 
-wealthAnnualNext.addEventListener("click", function () {
-    const annualIncomeInput = document.getElementById("wealth-annual-income").value;
+childAgeNext.addEventListener("click", function () {
+    const annualIncomeInput = document.getElementById("child-annual-income").value;
     console.log(annualIncomeInput);
 
 
-    const wealthAnnualIncome = document.getElementById("wealth-creation-annual-income");
-    const wealthFinancialIncome = document.getElementById("wealth-creation-financial-income");
-    wealthFinancialIncome.style.display = "block";
-    wealthAnnualIncome.style.display = "none";
+    const childMarriageAnnualIncome = document.getElementById("child-marriage-annual-income");
+    const childMarriageCurrentAge = document.getElementById("child-marriage-current-age");
+    childMarriageAnnualIncome.style.display = "block";
+    childMarriageCurrentAge.style.display = "none";
 
     document.getElementById("annual-income-display").innerHTML  = annualIncomeInput;
 })
-//
+//child marriage annual income
 
-const wealthFinancialPrevious = document.getElementById("wealth-financial-previous");
-const wealthFinancialNext = document.getElementById("wealth-financial-next");
+const childAnnualIncomePrevious = document.getElementById("child-annual-income-previous");
+const childAnnualIncomeNext = document.getElementById("child-annual-income-next");
 
-wealthFinancialPrevious.addEventListener("click", function () {
-    const wealthAnnualIncome = document.getElementById("wealth-creation-annual-income");
-    const wealthFinancialIncome = document.getElementById("wealth-creation-financial-income");
-    wealthAnnualIncome.style.display = "block";
-    wealthFinancialIncome.style.display = "none";
+childAnnualIncomePrevious.addEventListener("click", function () {
+    const childAnnualIncome = document.getElementById("child-marriage-annual-income");
+    const childMarriageCurrentAge = document.getElementById("child-marriage-current-age");
+    childMarriageCurrentAge.style.display = "block";
+    childAnnualIncome.style.display = "none";
     
 })
 
-wealthFinancialNext.addEventListener("click", function () {
-    const financialIncomeInput = document.getElementById("wealth-financial-income").value;
+childAnnualIncomeNext.addEventListener("click", function () {
+    const childAnnualIncomeInput = document.getElementById("child-annual-income").value;
    
 
 
-    const wealthCurrentAge = document.getElementById("wealth-creation-current-age");
-    const wealthFinancialIncome = document.getElementById("wealth-creation-financial-income");
-    wealthFinancialIncome.style.display = "none";
-    wealthCurrentAge.style.display = "block";
+    const childMarriageCost = document.getElementById("child-marriage-cost");
+    const childAnnualIncome = document.getElementById("child-marriage-annual-income");
+    childAnnualIncome.style.display = "none";
+    childMarriageCost.style.display = "block";
     
-    document.getElementById("financial-income-display").innerHTML  = financialIncomeInput;
+    document.getElementById("financial-income-display").innerHTML  = childAnnualIncomeInput;
 })
 
-//
-const wealthAgePrevious = document.getElementById("wealth-age-previous");
-const wealthAgeNext = document.getElementById("wealth-age-next");
+//child marriage cost
+const marriageCostPrevious = document.getElementById("marriage-cost-previous");
+const marriageCostNext = document.getElementById("marriage-cost-next");
 
-wealthAgePrevious.addEventListener("click", function () {
-    const wealthCurrentAge = document.getElementById("wealth-creation-current-age");
-    const wealthFinancialIncome = document.getElementById("wealth-creation-financial-income");
-    wealthCurrentAge.style.display = "none";
-    wealthFinancialIncome.style.display = "block";
+marriageCostPrevious.addEventListener("click", function () {
+    
+    const childMarriageCost = document.getElementById("child-marriage-cost");
+    const childMarriageAnnualIncome = document.getElementById("child-marriage-annual-income");
+    childMarriageCost.style.display = "none";
+    childMarriageAnnualIncome.style.display = "block";
    
 })
 
-wealthAgeNext.addEventListener("click", function () {
-    const currentAgeInput = document.getElementById("wealth-current-age").value;
+marriageCostNext.addEventListener("click", function () {
+    const childMarriageCostInput = document.getElementById("marriage-cost").value;
     
 
 
-    const wealthCurrentAge = document.getElementById("wealth-creation-current-age");
-    const wealthAgeGoal = document.getElementById("wealth-creation-age-goal");
-    wealthCurrentAge.style.display = "none";
-    wealthAgeGoal.style.display = "block";
+    const childMarriageCost = document.getElementById("child-marriage-cost");
+    const childsCurrentAge = document.getElementById("childs-marriage-current-age");
+    childMarriageCost.style.display = "none";
+    childsCurrentAge.style.display = "block";
     
-    document.getElementById("current-age-display").innerHTML  = currentAgeInput;
+    document.getElementById("current-age-display").innerHTML  = childMarriageCostInput;
 })
 
-///
-const wealthAgeGoalPrevious = document.getElementById("wealth-age-goal-previous");
-const wealthAgeGoalNext = document.getElementById("wealth-age-goal-next");
+//childs current age
+const childsAgePrevious = document.getElementById("childs-age-previous");
+const childsAgeNext = document.getElementById("childs-age-next");
 
-wealthAgeGoalPrevious.addEventListener("click", function () {
-    const wealthCurrentAge = document.getElementById("wealth-creation-current-age");
-    const wealthAgeGoal = document.getElementById("wealth-creation-age-goal");
-    wealthCurrentAge.style.display = "block";
-    wealthAgeGoal.style.display = "none";
-    nameDisplay.innerHTML = wealthName;
+childsAgePrevious.addEventListener("click", function () {
+    const childsCurrentAge = document.getElementById("childs-marriage-current-age");
+    const childMarriageCost = document.getElementById("child-marriage-cost");
+    childMarriageCost.style.display = "block";
+    childsCurrentAge.style.display = "none";
+    // nameDisplay.innerHTML = wealthName;
 })
 
-wealthAgeGoalNext.addEventListener("click", function () {
-    const ageGoalInput = document.getElementById("wealth-age-goal").value;
+childsAgeNext.addEventListener("click", function () {
+    const childsCurrentAgeInput = document.getElementById("childs-current-age").value;
 
-    const wealthInvestment = document.getElementById("wealth-creation-upfront-investment");
-    const wealthAgeGoal = document.getElementById("wealth-creation-age-goal");
-    wealthAgeGoal.style.display = "none";
-    wealthInvestment.style.display = "block";
+    const childMarriageCurrentAge = document.getElementById("childs-marriage-current-age");
+    const childAgeOnMarriageYear = document.getElementById("child-age-on-marriage-year");
+    childMarriageCurrentAge.style.display = "none";
+    childAgeOnMarriageYear.style.display = "block";
 
-    document.getElementById("age-goal-display").innerHTML  = ageGoalInput;
+    document.getElementById("age-goal-display").innerHTML  = childsCurrentAgeInput;
    
 })
 
-///
+//child age on marriage year
 
-const wealthInvestmentPrevious = document.getElementById("wealth-investment-previous");
-const wealthInvestmentNext = document.getElementById("wealth-investment-next");
+const ageOnMarriageYearPrevious = document.getElementById("age-on-marriage-year-previous");
+const ageOnMarriageYearNext = document.getElementById("age-on-marriage-year-next");
 
-wealthInvestmentPrevious.addEventListener("click", function () {
-    const wealthAgeGoal = document.getElementById("wealth-creation-age-goal");
-    const wealthInvestment = document.getElementById("wealth-creation-upfront-investment");
-    wealthInvestment.style.display = "none";
-    wealthAgeGoal.style.display = "block";
+ageOnMarriageYearPrevious.addEventListener("click", function () {
+    const childAgeOnMarriageYear = document.getElementById("child-age-on-marriage-year");
+    const childMarriageCurrentAge = document.getElementById("childs-marriage-current-age");
+    childAgeOnMarriageYear.style.display = "none";
+    childMarriageCurrentAge.style.display = "block";
     
 })
 
-wealthInvestmentNext.addEventListener("click", function () {
-    const investmentInput = document.getElementById("wealth-investment").value;
+ageOnMarriageYearNext.addEventListener("click", function () {
+    const ageOnMarriageYearInput = document.getElementById("age-on-marriage-year").value;
 
-    const wealthInvestment = document.getElementById("wealth-creation-upfront-investment");
-    const wealthRisk = document.getElementById("wealth-creation-risk");
-    wealthInvestment.style.display = "none";
-    wealthRisk.style.display = "block";
+    const childAgeOnMarriageYear = document.getElementById("child-age-on-marriage-year");
+    const childMarriageInvestment = document.getElementById("child-marriage-upfront-investment");
+    childAgeOnMarriageYear.style.display = "none";
+    childMarriageInvestment.style.display = "block";
     
     document.getElementById("investment-display").innerHTML  = investmentInput;
+})
+//child marriage upfront investment
+
+const marriageInvestmentPrevious = document.getElementById("marriage-investment-previous");
+const marriageInvestmentNext = document.getElementById("marriage-investment-next");
+
+marriageInvestmentPrevious.addEventListener("click", function () {
+    const childMarriageInvestment = document.getElementById("child-marriage-upfront-investment");
+    const childAgeOnMarriageYear = document.getElementById("child-age-on-marriage-year");
+    childMarriageInvestment.style.display = "none";
+    childAgeOnMarriageYear.style.display = "block";
+    
+})
+
+marriageInvestmentNext.addEventListener("click", function () {
+    const marriageInvestmentInput = document.getElementById("marriage-investment").value;
+
+    const childMarriageRisk = document.getElementById("child-marriage-risk");
+    const childMarriageInvestment = document.getElementById("child-marriage-upfront-investment");
+    childMarriageInvestment.style.display = "none";
+    childMarriageRisk.style.display = "block";
+    
+    document.getElementById("investment-display").innerHTML  = marriageInvestmentInput;
 })
 
 //

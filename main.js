@@ -162,16 +162,16 @@ marriageInvestmentNext.addEventListener("click", function () {
 })
 
 //
-const wealthRiskPrevious = document.getElementById("wealth-risk-previous");
+const childMarriageRiskPrevious = document.getElementById("child-marriage-risk-previous");
 
 
-wealthRiskPrevious.addEventListener("click", function () {
+childMarriageRiskPrevious.addEventListener("click", function () {
     // const riskInput = document.getElementById("wealth-risk").value;
-    console.log("clk");
-    const wealthRisk = document.getElementById("wealth-creation-risk");
-    const wealthInvestment = document.getElementById("wealth-creation-upfront-investment");
-    wealthRisk.style.display = "none";
-    wealthInvestment.style.display = "block";
+    
+    const childMarriageRisk = document.getElementById("child-marriage-risk");
+    const childMarriageInvestment = document.getElementById("child-marriage-upfront-investment");
+    childMarriageRisk.style.display = "none";
+    childMarriageInvestment.style.display = "block";
     
     // document.getElementById("risk-display").innerHTML  = riskInput;
 })

@@ -13,6 +13,7 @@ childNameNext.addEventListener("click", function () {
     marriageName.style.display = "none";
     childMarriageCurrentAge.style.display = "block";
     document.getElementById("name-display").innerHTML = childNameInput;
+    document.getElementById("child-marriage-user").innerHTML = childNameInput;
 })
 // child current age
 const childAgePrevious = document.getElementById("child-age-previous");
